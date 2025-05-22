@@ -1,27 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import {
-  ChevronDown,
-  Rocket,
-  Settings,
-  Smartphone,
-  Shield,
-  Target,
-  Globe,
-  BarChart3,
-  GitBranch,
-  FileText,
-  CheckCircle,
-  RefreshCw,
-  Bot,
-  Lock,
-  Activity,
-  Database,
-  Code,
-  Zap,
-} from "lucide-react";
-import Image from "next/image";
 import { translations } from "./translations"; // Adjust path as needed
 
 type Language = "en" | "hi" | "bn" | "mr";
