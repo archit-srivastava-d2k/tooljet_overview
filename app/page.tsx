@@ -3,7 +3,25 @@
 import React, { useState, useEffect } from "react";
 import { translations } from "./translations"; // Adjust path as needed
 
-type Language = "en" | "hi" | "bn" | "mr" | "te" | "ta";
+type Language =
+  | "en"
+  | "hi"
+  | "bn"
+  | "mr"
+  | "te"
+  | "ta"
+  | "gu"
+  | "kn"
+  | "ml"
+  | "pa"
+  | "or"
+  | "as"
+  | "kon"
+  | "mni"
+  | "brx"
+  | "doi"
+  | "mai"
+  | "sat"
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("overview");
@@ -60,19 +78,67 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-4 py-6">
         {/* Header */}
         <header className="text-center mb-12">
-          <div className="flex justify-end mb-4">
+          <div className="flex justify-end mb-4 ">
             {/* Language Selector */}
             <select
               value={currentLanguage}
               onChange={(e) => changeLanguage(e.target.value as Language)}
               className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <option value="en" className="text-gray-900">English</option>
-              <option value="hi" className="text-gray-900">हिंदी</option>
-              <option value="bn" className="text-gray-900">বাংলা</option>
-              <option value="mr" className="text-gray-900">मराठी</option>
-              <option value="te" className="text-gray-900">తెలుగు</option>
-              <option value="ta" className="text-gray-900">தமிழ்</option>
+              <option value="en" className="text-gray-900">
+                English
+              </option>
+              <option value="hi" className="text-gray-900">
+                हिंदी
+              </option>
+              <option value="bn" className="text-gray-900">
+                বাংলা
+              </option>
+              <option value="mr" className="text-gray-900">
+                मराठी
+              </option>
+              <option value="te" className="text-gray-900">
+                తెలుగు
+              </option>
+              <option value="ta" className="text-gray-900">
+                தமிழ்
+              </option>
+              <option value="gu" className="text-gray-900">
+                ગુજરાતી
+              </option>
+              <option value="kn" className="text-gray-900">
+                ಕನ್ನಡ
+              </option>
+              <option value="ml" className="text-gray-900">
+                മലയാളം
+              </option>
+              <option value="pa" className="text-gray-900">
+                ਪੰਜਾਬੀ
+              </option>
+              <option value="or" className="text-gray-900">
+                ଓଡ଼ିଆ
+              </option>
+              <option value="as" className="text-gray-900">
+                অসমীয়া
+              </option>
+              <option value="kon" className="text-gray-900">
+                कोंकणी
+              </option>
+              <option value="mni" className="text-gray-900">
+                মৈতৈলোন্
+              </option>
+              <option value="brx" className="text-gray-900">
+                बड़ो
+              </option>
+              <option value="doi" className="text-gray-900">
+                डोगरी
+              </option>
+              <option value="mai" className="text-gray-900">
+                मैथिली
+              </option>
+              <option value="sat" className="text-gray-900">
+                Santali
+              </option>
             </select>
           </div>
           <h1 className="text-5xl font-bold mb-4 text-gray-900 drop-shadow-md">
@@ -320,7 +386,9 @@ export default function Home() {
                 ].map((step, index) => (
                   <React.Fragment key={index}>
                     <div className="workflow-step bg-white border-2 border-gray-300 p-6 rounded-2xl text-center flex-1 min-w-32 hover:border-blue-600 hover:bg-blue-50 transition-all duration-200 shadow-sm">
-                      <h4 className="font-semibold mb-2 text-gray-900">{t(step.titleKey)}</h4>
+                      <h4 className="font-semibold mb-2 text-gray-900">
+                        {t(step.titleKey)}
+                      </h4>
                       <p className="text-sm text-gray-600">{t(step.subKey)}</p>
                     </div>
                     {index < 3 && (
@@ -386,7 +454,9 @@ export default function Home() {
                   ].map((item, index) => (
                     <React.Fragment key={index}>
                       <div className="bg-blue-50 text-blue-900 p-6 rounded-2xl text-center flex-1 min-w-48 shadow-sm">
-                        <h4 className="font-semibold mb-2">{t(item.titleKey)}</h4>
+                        <h4 className="font-semibold mb-2">
+                          {t(item.titleKey)}
+                        </h4>
                         <p className="text-sm">{t(item.subKey)}</p>
                       </div>
                       {index < 2 && (
@@ -418,7 +488,9 @@ export default function Home() {
                 ].map((step, index) => (
                   <React.Fragment key={index}>
                     <div className="workflow-step bg-white border-2 border-gray-300 p-6 rounded-2xl text-center flex-1 min-w-32 hover:border-blue-600 hover:bg-blue-50 transition-all duration-200 shadow-sm">
-                      <h4 className="font-semibold mb-2 text-gray-900">{t(step.titleKey)}</h4>
+                      <h4 className="font-semibold mb-2 text-gray-900">
+                        {t(step.titleKey)}
+                      </h4>
                       <p className="text-sm text-gray-600">{t(step.subKey)}</p>
                     </div>
                     {index < 3 && (
@@ -484,7 +556,9 @@ export default function Home() {
                   ].map((item, index) => (
                     <React.Fragment key={index}>
                       <div className="bg-blue-50 text-blue-900 p-6 rounded-2xl text-center flex-1 min-w-48 shadow-sm">
-                        <h4 className="font-semibold mb-2">{t(item.titleKey)}</h4>
+                        <h4 className="font-semibold mb-2">
+                          {t(item.titleKey)}
+                        </h4>
                         <p className="text-sm">{t(item.subKey)}</p>
                       </div>
                       {index < 2 && (
@@ -570,7 +644,9 @@ export default function Home() {
                   ].map((item, index) => (
                     <React.Fragment key={index}>
                       <div className="bg-blue-50 text-blue-900 p-6 rounded-2xl text-center flex-1 min-w-48 shadow-sm">
-                        <h4 className="font-semibold mb-2">{t(item.titleKey)}</h4>
+                        <h4 className="font-semibold mb-2">
+                          {t(item.titleKey)}
+                        </h4>
                         <p className="text-sm">{t(item.subKey)}</p>
                       </div>
                       {index < 2 && (
