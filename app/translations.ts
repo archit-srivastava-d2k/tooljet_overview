@@ -13,7 +13,7 @@ interface Translations {
 
 export const translations: Translations = {
   en: {
-    title: "Tooljet:Enterprise Low-Code Platform",
+    title: "Enterprise Low-Code Platform",
     subtitle: "Streamline Development • Enhance Security • Scale Efficiently",
     platformOverview: "Platform Overview",
     developmentFeatures: "Development Features",
@@ -193,7 +193,7 @@ export const translations: Translations = {
     addedComponent: "Added:"
   },
   hi: {
-    title: "टूलजेट:एंटरप्राइज लो-कोड प्लेटफॉर्म",
+    title: "एंटरप्राइज लो-कोड प्लेटफॉर्म",
     subtitle: "विकास को सुव्यवस्थित करें • सुरक्षा बढ़ाएं • कुशलता से स्केल करें",
     platformOverview: "प्लेटफॉर्म अवलोकन",
     developmentFeatures: "विकास सुविधाएं",
@@ -553,7 +553,7 @@ export const translations: Translations = {
     addedComponent: "যোগ করা হয়েছে:"
   },
   mr: {
-  title: "टूलजेट:एंटरप्राइज लो-कोड प्लॅटफॉर्म",
+  title: "एंटरप्राइज लो-कोड प्लॅटफॉर्म",
   subtitle: "विकास सुलभ करा • सुरक्षा वाढवा • कार्यक्षमतेने स्केल करा",
   platformOverview: "प्लॅटफॉर्म अवलोकन",
   developmentFeatures: "विकास वैशिष्ट्ये",
